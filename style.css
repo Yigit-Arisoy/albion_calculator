@@ -1,0 +1,215 @@
+body {
+  font-family: Montserrat;
+  background-color: #0a0a0af2;
+  background-image: none;
+  background-size: cover;
+  color: white;
+  transition: background 0.5s linear;
+}
+
+#background-images {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+#leather-background {
+  background-image: url("./images/leather_background.jpg");
+  background-size: cover;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  min-width: 100%;
+  min-height: 100%;
+  transition: all 0.2s ease-in;
+  opacity: 0;
+}
+
+#rock-background {
+  background-image: url("./images/rock_background.jpg");
+  background-size: cover;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  min-width: 100%;
+  min-height: 100%;
+  transition: all 0.2s ease-in;
+  opacity: 0;
+}
+
+#wood-background {
+  background-image: url("./images/wood_background.jpg");
+  background-size: cover;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  min-width: 100%;
+  min-height: 100%;
+  transition: all 0.2s ease-in;
+  opacity: 0;
+}
+
+#fiber-background {
+  background-image: url("./images/fiber-background.jpg");
+  background-size: cover;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  min-width: 100%;
+  min-height: 100%;
+  transition: all 0.2s ease-in;
+  opacity: 0;
+}
+
+#ore-background {
+  background-image: url("./images/ore_background.jpg");
+  background-size: cover;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  min-width: 100%;
+  min-height: 100%;
+  transition: all 0.2s ease-in;
+  opacity: 0;
+}
+
+.opacity-0 {
+  opacity: 0;
+}
+
+header {
+  color: white;
+  text-align: center;
+  width: 100%;
+}
+
+header h1 {
+  font-weight: 400;
+  font-size: 1.7rem;
+  margin: 0;
+}
+
+header h2 {
+  font-weight: 400;
+  margin: 0 0 10px 0;
+}
+
+main {
+  margin-left: 100px;
+  display: grid;
+  grid-template-columns: 0.2fr 0.55fr;
+  align-items: flex-start;
+}
+
+nav {
+  width: 200px;
+  max-height: 300px;
+  margin: 0 0 0 100px;
+  display: flex;
+  flex-flow: column;
+  justify-content: space-evenly;
+}
+nav button {
+  font-family: Montserrat;
+  width: 100px;
+  height: 50px;
+  margin-bottom: 10px;
+  background-color: rgba(10, 10, 10, 0.95);
+  color: white;
+  border-radius: 10px;
+  border-color: white;
+  border-style: solid;
+  font-weight: 500;
+  transition: all 0.1s ease-in;
+}
+
+button:hover {
+  transform: scale(1.1);
+}
+
+#hide-button {
+  background-color: white;
+  color: rgba(10, 10, 10, 0.95);
+}
+
+.container th h1 {
+  font-weight: bold;
+  font-size: 1em;
+  text-align: left;
+  color: #185875;
+}
+
+.container td {
+  font-weight: normal;
+  font-size: 1em;
+  -webkit-box-shadow: 0 2px 2px -2px #0e1119;
+  -moz-box-shadow: 0 2px 2px -2px #0e1119;
+  box-shadow: 0 2px 2px -2px #0e1119;
+}
+
+.container {
+  text-align: left;
+  overflow: hidden;
+  margin: 0;
+  display: table;
+  padding: 0 0 4em 0;
+  width: 100%;
+  transition: all 0.1s ease-in;
+}
+
+.container td,
+.container th {
+  padding-top: 1%;
+  padding-left: 1%;
+  padding-bottom: 0.5%;
+}
+
+.container tr:nth-child(n + 1) {
+  background-color: #346077af;
+}
+
+.container tr:nth-child(n + 5) {
+  background-color: #761c169c;
+}
+
+.container tr:nth-child(n + 9) {
+  background-color: #864b1eaf;
+}
+
+.container tr:nth-child(n + 13) {
+  background-color: #998130ab;
+}
+
+.container tr:nth-child(n + 17) {
+  background-color: #3b3b3ba2;
+}
+
+.container th {
+  background-color: rgba(255, 255, 255, 0.788);
+}
+
+.container td:first-child {
+  color: white;
+  transition: all 0.4s ease;
+}
+
+.container tr:hover {
+  background-color: rgb(88, 88, 88);
+  -webkit-box-shadow: 0 6px 6px -6px #0e1119;
+  -moz-box-shadow: 0 6px 6px -6px #0e1119;
+  box-shadow: 0 6px 6px -6px #0e1119;
+}
+
+.loss {
+  color: red;
+}
+
+.profit {
+  color: greenyellow;
+}
