@@ -1,0 +1,3 @@
+The new portal zones have their own city property in the api and it could be used to get more up to date data on prices. These zones share the same market but are presented seperately in the server.
+- Make an additional fetch call to portal zones and compare the update times and use the up to date one.
+- This means creating a new array to combine prices from both locations

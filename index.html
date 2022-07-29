@@ -26,11 +26,36 @@
       <div id="fiber-background"></div>
       <div id="ore-background"></div>
       <nav>
-        <button id="hide-button">Hide</button>
-        <button id="fiber-button">Fiber</button>
-        <button id="wood-button">Wood</button>
-        <button id="ore-button">Ore</button>
-        <button id="rock-button">Rock</button>
+        <div id="buttons">
+          <button id="hide-button">Hide</button>
+          <button id="fiber-button">Fiber</button>
+          <button id="wood-button">Wood</button>
+          <button id="ore-button">Ore</button>
+          <button id="rock-button">Rock</button>
+        </div>
+
+        <select name="dropdown" id="city">
+          <optgroup label="Royals">
+            <option value="FortSterling">Fort Sterling</option>
+            <option value="Lymhurst">Lymhurst</option>
+            <option value="Bridgewatch">Bridgewatch</option>
+            <option value="Martlock">Martlock</option>
+            <option value="Thetford">Thetford</option>
+          </optgroup>
+          <optgroup label="Black Zone">
+            <option value="MorganasRest">Morgana's Rest</option>
+            <option value="ArthursRest">Arthur's Rest</option>
+            <option value="MerlynsRest">Merlyn's Rest</option>
+          </optgroup>
+        </select>
+
+        <form action="" id="rr-form">
+          <label for="rr">Resource Return</label>
+          <input type="text" maxlength="4" id="rr" value="53.9" />
+        </form>
+
+        <div id="errorMessage">Enter a valid value</div>
+        <button id="recalc">Recalculate</button>
       </nav>
 
       <table class="container">

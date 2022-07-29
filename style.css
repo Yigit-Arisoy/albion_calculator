@@ -1,6 +1,6 @@
 body {
   font-family: Montserrat;
-  background-color: #0a0a0af2;
+  background-color: rgba(10, 10, 10, 0.949);
   background-image: none;
   background-size: contain;
   color: white;
@@ -108,6 +108,51 @@ main {
   align-items: flex-start;
 }
 
+select {
+  margin-top: 50px;
+  color: white;
+  background-color: black;
+  border-radius: 10px;
+  border-style: solid;
+  border-color: white;
+  font-family: Montserrat;
+  max-width: 125px;
+  min-height: 25px;
+}
+
+#rr-form {
+  margin-top: 20px;
+  background-color: transparent;
+  font-size: 0.9rem;
+}
+
+#rr {
+  margin-top: 5px;
+  color: white;
+  background-color: black;
+  border-radius: 10px;
+  border-style: solid;
+  border-color: white;
+  max-width: 75px;
+}
+
+#errorMessage {
+  margin-top: 5px;
+  font-size: 0.9rem;
+  color: rgb(194, 18, 53);
+  font-weight: 600;
+  display: none;
+}
+
+#recalc {
+  margin-top: 5px;
+  max-height: 30px;
+  width: 125px;
+  max-width: 175px;
+  transition: all 0.2s ease-in;
+  opacity: 0;
+}
+
 footer {
   text-align: center;
   margin-bottom: 30px;
@@ -115,7 +160,6 @@ footer {
 
 nav {
   width: 200px;
-  max-height: 300px;
   margin: 0 0 0 100px;
   display: flex;
   flex-flow: column;
