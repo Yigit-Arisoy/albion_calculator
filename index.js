@@ -37,14 +37,16 @@ reCalcButton.addEventListener("click", reCalculate);
 let updateTime = (updatedTime) => {
   let current = new Date();
 
-  let differenceSeconds = (current - updatedTime) / 1000;
+  let differenceMinutes = parseInt(
+    (current - updatedTime) / 1000 / 60 + current.getTimezoneOffset()
+  );
 
-  if (differenceSeconds < 1) {
-    return `${parseInt(differenceSeconds)} seconds ago`;
-  } else if (differenceSeconds >= 1 && differenceSeconds < 60) {
-    return `${parseInt(differenceSeconds / 60)} minutes ago`;
+  if (differenceMinutes < 1) {
+    return `Less than a minute ago`;
+  } else if (differenceMinutes >= 1 && differenceMinutes < 60) {
+    return `${parseInt(differenceMinutes)} minutes ago`;
   } else {
-    return `${parseInt(differenceSeconds / 60 / 60)} hours ago`;
+    return `${parseInt(differenceMinutes / 60)} hours ago`;
   }
 };
 
